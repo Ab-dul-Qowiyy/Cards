@@ -58,7 +58,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-800 to-indigo-900 flex flex-col items-center justify-center text-white p-6">
       <h1 className="text-3xl font-bold mb-6"> Card Math Game</h1>
-      <div className="flex  gap-10 mb-8 ">
+      <div className="flex  gap-10 mb-8   sm:w-50 sm:h-56 md:w-55 md:h-64  ">
         <Deck card={leftCard} onDraw={drawLeft} suit={suits} />
         <Deck card={rightCard} onDraw={drawRight} />
         {resultCard && (

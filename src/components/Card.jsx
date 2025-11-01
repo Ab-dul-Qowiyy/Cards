@@ -20,9 +20,9 @@ const Card = ({card, onClick, isDeck, suit}) => {
           initial={{ rotateY: 180 }}
           animate={{ rotateY: 0 }}
           transition={{ duration: 0.5 }}
-          className={` rounded-xl shadow-md p-3 flex flex-col justify-between ${
+          className={`w-full h-full p-3 flex flex-col justify-between ${
             isRed ? "text-red-600" : "text-black"
-          }w-32 h-48 sm:w-36 sm:h-56 md:w-40 md:h-64 lg:h-72 `}
+          }  `}
         >
           <div className="text-sm font-bold">
             {card.label}
