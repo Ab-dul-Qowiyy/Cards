@@ -8,20 +8,18 @@ const OperationButton = ({ onOperate}) => {
       { label: "Multiplication", color: "bg-green-500 hover:bg-yellow-600", op: "mul" },
     ];
   return (
-    <div className="flex gap-6 mt-6">
-      {buttons.map(({label, color, op})=>(
-        <button 
-            key={op}
-            onClick={() => onOperate(op)}
-            className={`px-5 py-2 ${color} text-lg rounded-lg shadow-lg transition-all`}
+    <div className="flex flex-col gap-6 mt-6 sm:flex-row sm:justify-center">
+      {buttons.map(({ label, color, op }) => (
+        <button
+          key={op}
+          onClick={() => onOperate(op)}
+          className={`px-5 py-2 ${color} text-lg rounded-lg shadow-lg transition-all rounded-md`}
         >
-            {label}
+          {label}
         </button>
-      )
-        
-    )}
+      ))}
     </div>
-  )
+  );
 }
 
 export default OperationButton
